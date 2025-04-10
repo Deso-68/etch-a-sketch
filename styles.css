@@ -5,3 +5,8 @@
 body {
     background-color: var(--body-background-color);
 }
+
+.grid-container {
+    margin: 0px;
+    border: 0px;
+}
