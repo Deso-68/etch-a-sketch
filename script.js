@@ -1,7 +1,7 @@
-
+const DEFAULT_GRID_SIZE = 16;
 
 // main
-createSixteenGridContainer();
+createSixteenGridContainer(DEFAULT_GRID_SIZE);
 addHoverEvent();
 
 
