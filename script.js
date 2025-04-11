@@ -5,6 +5,9 @@ createSixteenGridContainer();
 addHoverEvent();
 
 
+function promptGridSize() {
+    const userPromptSize = prompt("Input the number of squares per side for new the grid, max is 100");
+}
 
 function addHoverEvent() {
     const gridNode = document.querySelectorAll(".grid-node");
@@ -16,7 +19,6 @@ function addHoverEvent() {
             console.log("Hovered!");
             });
    }); 
-  
 }
 
 function createSixteenGridContainer() {
