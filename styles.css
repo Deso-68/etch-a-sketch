@@ -25,11 +25,14 @@ body {
 
 .grid-container {
     margin: 0px;
+    margin-left: 10vw;
     border: 0px; 
-    padding: 1px;   
+    padding: 0px;   
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 80vw;
+    max-height: 80vh;
 }
 
 .sixteen-grid-container {
