@@ -5,6 +5,15 @@ createSixteenGridContainer();
 addHoverEvent();
 
 
+function addNewGridBtnEvent() {
+    const newGridBtn = document.querySelector(".btn-new-grid");
+
+    newGridBtn.addEventListener("click", () => {
+        const gridSize = promptGridSize();
+
+    });
+}
+
 function promptGridSize() {
     const userPromptSize = prompt("Input the number of squares per side for new the grid, max is 100");
 }
