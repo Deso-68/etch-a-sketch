@@ -4,6 +4,7 @@ const DEFAULT_GRID_SIZE = 16;
 createSixteenGridContainer(DEFAULT_GRID_SIZE);
 addHoverEvent();
 
+addNewGridBtnEvent();
 
 function addNewGridBtnEvent() {
     const newGridBtn = document.querySelector(".btn-new-grid");
@@ -11,6 +12,7 @@ function addNewGridBtnEvent() {
     newGridBtn.addEventListener("click", () => {
         const gridSize = promptGridSize();
 
+        console.log("hello");
         createSixteenGridContainer(gridSize);
         addHoverEvent();
     });
@@ -27,7 +29,6 @@ function addHoverEvent() {
     gridNode.forEach(element => {
         element.addEventListener("mouseenter", () => {
             element.setAttribute("style", "background-color: red;");
-            console.log("Hovered!");
             });
    }); 
 }
