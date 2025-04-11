@@ -2,7 +2,22 @@
 
 // main
 createSixteenGridContainer();
+addHoverEvent();
 
+
+
+function addHoverEvent() {
+    const gridNode = document.querySelectorAll(".grid-node");
+    console.log(gridNode)
+
+    gridNode.forEach(element => {
+        element.addEventListener("mouseenter", () => {
+            element.setAttribute("style", "background-color: red;");
+            console.log("Hovered!");
+            });
+   }); 
+  
+}
 
 function createSixteenGridContainer() {
     const gridContainer = document.querySelector(".grid-container")
