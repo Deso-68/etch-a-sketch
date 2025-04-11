@@ -33,6 +33,8 @@ body {
     align-items: center;
     max-width: 80vw;
     max-height: 80vh;
+    min-width: 80vw;
+    min-height: 80vh;
 }
 
 .sixteen-grid-container {
