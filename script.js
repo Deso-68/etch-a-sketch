@@ -11,6 +11,8 @@ function addNewGridBtnEvent() {
     newGridBtn.addEventListener("click", () => {
         const gridSize = promptGridSize();
 
+        createSixteenGridContainer(gridSize);
+        addHoverEvent();
     });
 }
 
@@ -30,20 +32,19 @@ function addHoverEvent() {
    }); 
 }
 
-function createSixteenGridContainer() {
+function createSixteenGridContainer(gridSize) {
     const gridContainer = document.querySelector(".grid-container")
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < gridSize; i++) {
         const sixteenGridContainer = document.createElement("div");
         sixteenGridContainer.classList.add("sixteen-grid-container");
 
         gridContainer.appendChild(sixteenGridContainer);
-        createSixteenGrid(sixteenGridContainer);
+        createSixteenGrid(sixteenGridContainer, gridSize);
     }
 }
 
-function createSixteenGrid(sixteenGridContainer) {
-    
-    for (let i = 0; i < 16; i++) {
+function createSixteenGrid(sixteenGridContainer, gridSize) {
+    for (let i = 0; i < gridSize; i++) {
        const gridNode = document.createElement("div");
        gridNode.classList.add("grid-node");
        sixteenGridContainer.appendChild(gridNode);
