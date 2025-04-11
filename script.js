@@ -1,4 +1,5 @@
 const DEFAULT_GRID_SIZE = 16;
+const gridContainer = document.querySelector(".grid-container");
 
 // main
 createSixteenGridContainer(DEFAULT_GRID_SIZE);
@@ -13,6 +14,11 @@ function addNewGridBtnEvent() {
         const gridSize = promptGridSize();
 
         console.log("hello");
+        
+        while(gridContainer.firstChild) {
+            gridContainer.removeChild(gridContainer.firstChild);
+        }
+
         createSixteenGridContainer(gridSize);
         addHoverEvent();
     });
@@ -24,7 +30,7 @@ function promptGridSize() {
 
 function addHoverEvent() {
     const gridNode = document.querySelectorAll(".grid-node");
-    console.log(gridNode)
+    console.log(gridNode);
 
     gridNode.forEach(element => {
         element.addEventListener("mouseenter", () => {
@@ -34,7 +40,6 @@ function addHoverEvent() {
 }
 
 function createSixteenGridContainer(gridSize) {
-    const gridContainer = document.querySelector(".grid-container")
     for (let i = 0; i < gridSize; i++) {
         const sixteenGridContainer = document.createElement("div");
         sixteenGridContainer.classList.add("sixteen-grid-container");
