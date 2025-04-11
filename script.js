@@ -26,6 +26,7 @@ function addNewGridBtnEvent() {
 
 function promptGridSize() {
     const userPromptSize = prompt("Input the number of squares per side for new the grid, max is 100");
+    return userPromptSize;
 }
 
 function addHoverEvent() {
