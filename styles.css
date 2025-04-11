@@ -4,11 +4,18 @@
 
 body {
     background-color: var(--body-background-color);
+    width: 100vw; 
+    height: 100vw;
 }
 
 .grid-container {
     margin: 0px;
     border: 0px;
+    padding: 1px;
     display: flex;
 }
 
+.grid-node {
+    width: 4px;
+    border: black 1px solid;
+}
