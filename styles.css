@@ -1,5 +1,6 @@
 :root {
     --body-background-color: #E8ECEF;
+    --soft-pastel-red:  #FF9999;
 }
 
 body {
@@ -8,6 +9,18 @@ body {
 
     width: 100vw;
     height: 100vh;
+}
+
+.btn-container button {
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+    border-radius: 4rem;
+    border-color: var(--soft-pastel-red);
+    background-color: var(--soft-pastel-red);
+    padding: 0.3rem;
+    font-size: 1rem;
+    width: 8vw;
+    height: 4vh;
 }
 
 .grid-container {
