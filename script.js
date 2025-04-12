@@ -47,7 +47,9 @@ function addHoverEvent() {
 }
 
 function randomRgbValue() {
+    let randomRgb = undefined;
     
+    `backgroud-color: rgba(${randomRgb})`;
 }
 
 function createSixteenGridContainer(gridSize) {
