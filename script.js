@@ -42,7 +42,7 @@ function addHoverEvent() {
     gridNode.forEach(element => {
         element.addEventListener("mouseenter", () => {
             element.setAttribute("style", "background-color: red;");
-            });
+            }, once);
    }); 
 }
 
