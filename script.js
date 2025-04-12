@@ -47,9 +47,14 @@ function addHoverEvent() {
 }
 
 function randomRgbValue() {
-    let randomRgb = undefined;
+    const rValue = (getRandomInt(0, 256).toString(16) );
+    const gValue = (getRandomInt(0, 256).toString(16) );
+    const bValue = (getRandomInt(0, 256).toString(16) );
 
-    `backgroud-color: rgba(${randomRgb})`;
+    // rgba(0, 0, 0, 0.534);
+    
+    let randomRgb = rValue + ", " + gValue + ", " + bValue;
+    `backgroud-color: rgb(${randomRgb})`;
 }
 
 function getRandomInt(min, max) {
