@@ -63,6 +63,8 @@ function darkeningEffectCalc() {
     const alpha = (Math.round(darkeningCounter * 255)).toString(16);
     if(darkeningCounter < 0.9) {
         darkeningCounter += 0.1;
+    } else {
+        darkeningCounter = 0.1;
     }
     console.log(alpha);
     return alpha;
