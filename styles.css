@@ -43,10 +43,16 @@ body {
 
 .sixteen-grid-container {
     display: flex;
+    max-width: 636px;
+    max-height: 636px;
+    min-width: 636px;
+    flex-shrink: 1;
 }
 
 .grid-node {
-    width:  2rem;
-    height: 2rem;
-    border: black 1px solid;
+    flex-grow: 1;
+    aspect-ratio: 1/1;
+    min-height: 2px;
+    min-width: 2px;
+    border: 0;
 }
