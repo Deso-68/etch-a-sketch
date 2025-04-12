@@ -52,8 +52,9 @@ function randomRgbValue() {
     const rValue = getRandomInt(0, 256).toString(16);
     const gValue = getRandomInt(0, 256).toString(16);
     const bValue = getRandomInt(0, 256).toString(16);
-    
-    let randomRgb = "#" + rValue + gValue + bValue;
+    const alpha = darkeningEffectCalc();
+
+    let randomRgb = "#" + rValue + gValue + bValue + alpha;
 
     return randomRgb;
 }
