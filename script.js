@@ -54,7 +54,7 @@ function randomRgbValue() {
     // rgba(0, 0, 0, 0.534);
     
     let randomRgb = rValue + ", " + gValue + ", " + bValue;
-    `backgroud-color: rgb(${randomRgb})`;
+    return `backgroud-color: rgb(${randomRgb})`;
 }
 
 function getRandomInt(min, max) {
