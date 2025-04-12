@@ -1,7 +1,6 @@
 :root {
-    --body-background-color: #E8ECEF;
+    --body-background-color: #FFF8E7;
     --soft-pastel-red:  #FF9999;
-    --sage-green: #A8B5A2;
 }
 
 body {
@@ -13,8 +12,9 @@ body {
 }
 
 .btn-container button {
-    margin-top: 1vh;
+    margin-top: 3vh;
     margin-bottom: 4vh;
+    margin-left: 20%;
     border-radius: 4rem;
     border-color: var(--soft-pastel-red);
     background-color: var(--soft-pastel-red);
@@ -31,8 +31,7 @@ body {
 
 .grid-container {
     margin: 0px;
-    border: 10px var(--sage-green) solid; 
-    border-radius: 2rem;
+    border: 5px rgba(0, 0, 0, 0.534) solid; 
     padding: 0px;   
     display: flex;
     flex-direction: column;
@@ -56,5 +55,5 @@ body {
     aspect-ratio: 1/1;
     min-height: 2px;
     min-width: 2px;
-    border: 0;
+    border: 0px;
 }
