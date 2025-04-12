@@ -51,12 +51,9 @@ function randomRgbValue() {
     const rValue = getRandomInt(0, 256).toString(16);
     const gValue = getRandomInt(0, 256).toString(16);
     const bValue = getRandomInt(0, 256).toString(16);
-
-    // rgba(0, 0, 0, 0.534);
     
     let randomRgb = "#" + rValue + gValue + bValue;
 
-    console.log(randomRgb);
     return randomRgb;
 }
 
