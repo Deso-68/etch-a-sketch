@@ -41,20 +41,23 @@ function addHoverEvent() {
 
     gridNode.forEach(element => {
         element.addEventListener("mouseenter", () => {
-            element.setAttribute("style", "background-color: red;");
+            let randomRgb = randomRgbValue();
+            element.setAttribute("style", `background-color: ${randomRgb}`);
             }, true);
    }); 
 }
 
 function randomRgbValue() {
-    const rValue = (getRandomInt(0, 256).toString(16) );
-    const gValue = (getRandomInt(0, 256).toString(16) );
-    const bValue = (getRandomInt(0, 256).toString(16) );
+    const rValue = getRandomInt(0, 256).toString(16);
+    const gValue = getRandomInt(0, 256).toString(16);
+    const bValue = getRandomInt(0, 256).toString(16);
 
     // rgba(0, 0, 0, 0.534);
     
-    let randomRgb = rValue + ", " + gValue + ", " + bValue;
-    return `backgroud-color: rgb(${randomRgb})`;
+    let randomRgb = "#" + rValue + gValue + bValue;
+
+    console.log(randomRgb);
+    return randomRgb;
 }
 
 function getRandomInt(min, max) {
