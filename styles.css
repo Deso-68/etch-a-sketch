@@ -25,16 +25,15 @@ body {
 
 .grid-container {
     margin: 0px;
-    margin-left: 10vw;
     border: 0px; 
     padding: 0px;   
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 80vw;
-    max-height: 80vh;
-    min-width: 80vw;
-    min-height: 80vh;
+    max-width: 636px;
+    max-height: 636px;
+    width: 636px;
+    height: 636px;
 }
 
 .sixteen-grid-container {
