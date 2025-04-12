@@ -25,7 +25,13 @@ function addNewGridBtnEvent() {
 }
 
 function promptGridSize() {
-    const userPromptSize = prompt("Input the number of squares per side for new the grid, max is 100");
+    const userPromptSize = prompt("Input the number of squares per side for the new the grid, max is 100");
+    
+    if(userPromptSize < 0 || userPromptSize > 100) {
+        alert("Valid number is 1-100 range");
+        return promptGridSize();
+    } 
+
     return userPromptSize;
 }
 
