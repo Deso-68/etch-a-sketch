@@ -46,6 +46,10 @@ function addHoverEvent() {
    }); 
 }
 
+function randomRgbValue() {
+    
+}
+
 function createSixteenGridContainer(gridSize) {
     for (let i = 0; i < gridSize; i++) {
         const sixteenGridContainer = document.createElement("div");
