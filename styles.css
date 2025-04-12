@@ -1,6 +1,7 @@
 :root {
     --body-background-color: #E8ECEF;
     --soft-pastel-red:  #FF9999;
+    --sage-green: #A8B5A2;
 }
 
 body {
@@ -30,7 +31,8 @@ body {
 
 .grid-container {
     margin: 0px;
-    border: 0px; 
+    border: 10px var(--sage-green) solid; 
+    border-radius: 2rem;
     padding: 0px;   
     display: flex;
     flex-direction: column;
