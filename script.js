@@ -1,4 +1,5 @@
 const DEFAULT_GRID_SIZE = 16;
+let darkeningCounter = 0.1;
 const gridContainer = document.querySelector(".grid-container");
 
 // main
@@ -55,6 +56,12 @@ function randomRgbValue() {
     let randomRgb = "#" + rValue + gValue + bValue;
 
     return randomRgb;
+}
+
+function darkeningEffectCalc() {
+    const alpha = (Math.round(darkeningCounter * 255)).toString(16);
+    if(darkeningCounter < 1.0) darkeningCounter += 0.1;
+    return alpha;
 }
 
 function getRandomInt(min, max) {
